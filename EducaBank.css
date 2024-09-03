@@ -208,3 +208,44 @@ header nav ul li a {
     /* IREMOS ALTERAR A FORMATAÇÃO DE ALINHAMENTO */
     
 }
+
+.section-5 {
+    padding: 200px;
+    background: linear-gradient(180deg, #7c7e9764 8.33%, #0c16a364 100%), url(img/img\ cofre\ fundo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-5 img{
+    width: 380px;
+}
+
+
+footer {
+    padding: 140px;
+    background-color: rgb(75, 67, 67);
+    display: flex;
+    text-align: center;
+}
+
+.div-privacidade{
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-privacidade p{
+    text-align: center;
+    color: rgb(206, 223, 223);
+
+}
+
+.div-privacidade a{
+    text-decoration: none;
+    color: white;
+}
+
+.div-privacidade:hover{
+    color: brown;
+    transition: 0.8s;
+}
