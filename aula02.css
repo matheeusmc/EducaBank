@@ -5,7 +5,7 @@
     background-color: dodgerblue;
 }
 
-.flex-container > div {
+.flex-container>div {
     background-color: aliceblue;
     width: 100px;
     margin: 10px;
@@ -13,3 +13,71 @@
     line-height: 75px;
     font-size: 30px;
 }
+
+section {
+    padding: 200px;
+    /* preenchimento da sessão */
+    display: flex;
+    /* Tornando itens flex deixando as caixas lado a lado */
+    justify-content: center;
+    /* Justificando o conteudo ap centro (Horizontal) */
+    align-items: center;
+    /* Alinhando os itens ao centro na vertical */
+    gap: 30px;
+    /* propiedade utilizada para dar o respiro/espaço entre os elementos */
+}
+
+header{
+    padding: 100px;
+    background-color: red;
+}
+
+footer{
+    padding: 100px;
+    background-color: red;
+}
+
+body {
+    background-color: rgba(127, 255, 212, 0.644);
+    color: white;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section div {
+    width: 200px;
+    /* largura da caixa */
+    height: 300px;
+    /* Altura da caixa */
+    background-color: aquamarine;
+    /* Cor de fundo da caixa */
+    padding: 20px;
+    /* preenchimento interno da caixa */
+    box-shadow: 30px 30px 40px gray;
+    /* Sombra externa da caixa primeiro valor eixo horizontal, segundo valor eixo vertical, ultimo valor expisição da sombra */
+}
+
+section div:hover {
+    transform: translate(20px, 0px);
+    /* Primeiro eixo X (Horizontal), depois valor do eixo Y (Vertical) */
+    transition: 0.7s;
+    /* transform: rotate(5deg); */
+    /* Aqui trabalhamos com a rotação da caixa (Esta comentado acima para desativar a rotação no site, mais o codigo esta acima)*/
+    /* transform: scale(1.1, 1.1); */
+    /* Trabalha com a scala de movimentação dos eixos X e Y, (Esta comentado acima para desativar a rotação no site, mais o codigo esta acima) */
+    transform: skew(20deg, 10deg);
+}
+
+/* 1. translate()
+Descrição: Move um elemento ao longo dos eixos X
+(Horizontal) e Y (Vertical) */
+
+/* 2. Rotate()
+Descrição: Rotaciona um elemento ao redor do seu ponto central. */
+
+/* 3. scale()
+Descrição: Redimensiona um elemento ao longo dos eixos X e Y */
+
+/* 4. skew()
+Descrição: Inclina um elemento ao longo dos eixos X e Y. */
+
